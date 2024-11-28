@@ -130,7 +130,7 @@ button[disabled] {
 .newyear__image {
   z-index: 1;
   height: 100%;
-  background: url("/images/bgsite.png");
+  background: url("img/bgsite.png");
 }
 
 .content {
@@ -147,7 +147,7 @@ button[disabled] {
 
 .paymentform {
   position: fixed;
-  z-index: 99997;
+  z-index: 99998;
   height: 100vh;
   width: 100%;
   top: 0;
@@ -157,25 +157,24 @@ button[disabled] {
   left: 0;
   overflow-y: auto;
   visibility: hidden;
-  pointer-events: none;
   transition: all 0.3s ease;
   opacity: 0;
   background: rgba(0, 0, 0, 0.3);
 }
 .paymentform__title {
   background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 145, 0));
-  z-index: 99997;
+  z-index: 99998;
   border-radius: 10px;
   display: flex;
   height: 60px;
   z-index: 100;
-  width: 380px;
+  width: 340px;
   position: absolute;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.paymentform__title span {
+.paymentform__title p {
   font-family: "minecraft", sans-serif;
   word-spacing: 6px;
   letter-spacing: 2px;
@@ -190,7 +189,7 @@ button[disabled] {
   width: 100px;
   height: 100px;
   position: relative;
-  background: url("/images/icons/Christmas-Tree-Template.svg") center/100% 100% no-repeat;
+  background: url("img/icons/Christmas-Tree-Template.svg") center/100% 100% no-repeat;
 }
 .paymentform__decoration:before {
   content: "";
@@ -201,7 +200,7 @@ button[disabled] {
   transform: rotate(-15deg) translate(-3px, 54px);
   width: 30px;
   height: 71px;
-  background: url("/images/icons/Christmas-Candle.svg") center/100% 100% no-repeat;
+  background: url("img/icons/Christmas-Candle.svg") center/100% 100% no-repeat;
 }
 .paymentform__decoration:after {
   content: "";
@@ -212,7 +211,7 @@ button[disabled] {
   transform: rotate(-14deg) translate(-196px, -13px);
   width: 80px;
   height: 80px;
-  background: url("/images/icons/christmas-sock.svg") center/100% 100% no-repeat;
+  background: url("img/icons/christmas-sock.svg") center/100% 100% no-repeat;
 }
 .paymentform__box {
   display: flex;
@@ -261,13 +260,13 @@ button[disabled] {
   box-shadow: 2px 25px 27px -13px rgba(204, 201, 195, 0.26);
 }
 .paymentform__nickname-img {
-  background: url("/images/icons/nickname.svg") center/20px 20px no-repeat #f4f4f4;
+  background: url("img/icons/nickname.svg") center/20px 20px no-repeat #f4f4f4;
 }
 .paymentform__email-img {
-  background: url("/images/icons/email.svg") center/20px 20px no-repeat #f4f4f4;
+  background: url("img/icons/email.svg") center/20px 20px no-repeat #f4f4f4;
 }
 .paymentform__promo-img {
-  background: url("/images/icons/promo.svg") center/20px 20px no-repeat #f4f4f4;
+  background: url("img/icons/promo.svg") center/20px 20px no-repeat #f4f4f4;
 }
 .paymentform__btn {
   color: #ffffff;
@@ -348,12 +347,12 @@ button[disabled] {
   vertical-align: text-bottom;
   position: relative;
   height: 24px;
-  border-radius: 8.5px;
+  border-radius: 8px;
   border: 2px solid rgb(255, 123, 0);
 }
 .check-style:before {
   content: "";
-  background: url("/images/icons/agreement-checkbox.svg") 0 0 no-repeat;
+  background: url("img/icons/agreement-checkbox.svg") 0 0 no-repeat;
   position: absolute;
   width: 24px;
   height: 24px;
@@ -364,7 +363,6 @@ button[disabled] {
 }
 
 .paymentform.open {
-  pointer-events: auto;
   visibility: visible;
   opacity: 1;
 }
@@ -374,41 +372,26 @@ button[disabled] {
 }
 
 .header {
-  position: relative;
   padding: 32px 0;
 }
-.header__burgermenubtn {
-  top: 60px;
-  right: 60px;
-  position: absolute;
-  z-index: 99898;
-  display: none;
-}
-.header__burgermenu {
-  display: none;
-  max-height: none; /* Меню всегда видно */
-  position: static; /* Меню в обычной позиции */
-}
 .header__bg {
-  height: 100px;
   box-shadow: 11px 12px 23px 0px rgba(255, 138, 4, 0.5);
   background: linear-gradient(to right, rgb(255, 200, 0), rgba(255, 72, 0, 0.71));
   border-radius: 12px;
 }
 .header__padding {
   display: flex;
-  padding: 0 80px;
+  padding: 0 25px;
   justify-content: space-between;
   align-items: center;
 }
 .header__img {
   width: 100px;
   height: 100px;
-  background: url("/images/bluespace.png") center/cover no-repeat;
+  background: url("img/bluespace.png") center/cover no-repeat;
   border-radius: 30%;
 }
 .header__items {
-  flex: 0 0 auto;
   display: flex;
 }
 .header__links {
@@ -420,6 +403,10 @@ button[disabled] {
   font-weight: 700;
   color: rgba(227, 227, 227, 0.837);
   transition: all 0.7s ease;
+}
+.header__link-item:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 .header__online {
   background: linear-gradient(to right, rgb(255, 145, 0), rgb(255, 145, 0));
@@ -439,6 +426,7 @@ button[disabled] {
 .slider__image-container {
   margin: 0 auto;
   display: flex;
+  justify-content: center;
   align-items: center;
   border-radius: 10px;
   max-width: 1270px;
@@ -504,7 +492,6 @@ button[disabled] {
 }
 .footer__row {
   z-index: 100;
-  padding: 0 10px 0 10px;
   display: flex;
   height: 100%;
   align-items: center;
@@ -523,6 +510,10 @@ button[disabled] {
   color: rgb(151, 165, 195);
   transition: all 0.5s ease;
 }
+.footer__text a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
 .footer__column-2 {
   z-index: 100;
   max-width: 33.333%;
@@ -539,6 +530,10 @@ button[disabled] {
 .footer__column2-link {
   z-index: 100;
   transition: all 0.5s ease;
+}
+.footer__column2-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 .footer__column-3 {
   z-index: 100;
@@ -590,40 +585,18 @@ button[disabled] {
   width: 205px;
   transition: all 0.5s ease;
 }
+.products__btn:hover {
+  box-shadow: 11px 40px 28px -13px rgba(34, 60, 80, 0.26);
+  transform: translate(0, -7px);
+  color: #ffffff;
+  background: rgb(255, 81, 0);
+}
 
 .first-selected-btn {
   color: #000000;
 }
 
-.nothing-cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 12px;
-  color: #ffffff;
-  font-size: 30px;
-  font-family: "Unbounded", sans-serif;
-  background: #ff4141;
-  width: 700px;
-  height: 300px;
-}
-
-.cards-container {
-  display: flex;
-  margin: 50px 0 400px 0;
-}
-.cards-container__row {
-  max-width: 1060px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .card {
-  opacity: 1;
-  transform: scale(1);
-  transition: opacity 0.3s ease, transform 0.3s ease;
   width: 300px;
   height: 400px;
   background: #ffffff;
@@ -663,10 +636,8 @@ button[disabled] {
 }
 
 .img {
-  width: 250px;
-  height: 250px;
   margin: 10px 0 20px 0;
-  border-radius: 14px;
+  border-radius: 12px;
   min-width: 250px;
   min-height: 250px;
 }
@@ -680,7 +651,12 @@ button[disabled] {
   display: flex;
   align-items: center;
   transform: scale(1, 1);
-  transition: all 0.2s ease;
+  transition: all 0.5s ease;
+}
+.card:hover {
+  box-shadow: 11px 40px 28px -13px rgba(161, 134, 36, 0.327);
+  transform: scale(1.05, 1.05);
+  transition: all 0.3s ease;
 }
 
 .card__last-element {
@@ -688,10 +664,10 @@ button[disabled] {
 }
 
 .hidden {
-  visibility: hidden;
   opacity: 0;
-  transform: scale(0.8);
-  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  transition: transform 0.7s ease, opacity 0.5s ease, visibility 0.5s ease, display 0.5s ease;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .somecard {
@@ -710,6 +686,15 @@ button[disabled] {
 
 .item {
   position: relative;
+}
+.item:hover .btn-hover {
+  visibility: visible;
+  position: static;
+}
+.item:hover .btn {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
 }
 
 .btn-hover {
@@ -779,2498 +764,85 @@ button[disabled] {
 }
 
 .second-card__image {
-  background: url("/images/donate/winter.jpeg") center/100% 100% no-repeat;
+  background: url("img/donate/winter.jpeg") center/100% 100% no-repeat;
 }
 
 .first-card__image {
-  background: url("/images/donate/wither.png") center/cover no-repeat;
+  background: url("img/donate/wither.png") center/cover no-repeat;
 }
 
 .third-card__image {
-  background: url("/images/donate/space.jpg") center/cover no-repeat;
+  background: url("img/donate/space.jpg") center/cover no-repeat;
 }
 
 .four-card__image {
-  background: url("/images/donate/archangel.jpg") center/cover no-repeat;
+  background: url("img/donate/archangel.jpg") center/cover no-repeat;
 }
 
 .five-card__image {
-  background: url("/images/donate/demon.jpg") center/cover no-repeat;
+  background: url("img/donate/demon.jpg") center/cover no-repeat;
 }
 
 .six-card__image {
-  background: url("/images/donate/berserk.jpg") center/cover no-repeat;
+  background: url("img/donate/berserk.jpg") center/cover no-repeat;
 }
 
 .cases1-card__image {
-  background: url("/images/cases/doncase.png") center/cover no-repeat;
+  background: url("img/cases/doncase.png") center/cover no-repeat;
 }
 
 .cases2-card__image {
-  background: url("/images/cases/mystcase.png") center/cover no-repeat;
+  background: url("img/cases/mystcase.png") center/cover no-repeat;
 }
 
 .cases3-card__image {
-  background: url("/images/cases/rubcase.jpg") center/cover no-repeat;
+  background: url("img/cases/rubcase.jpg") center/cover no-repeat;
 }
 
 .cases4-card__image {
-  background: url("/images/cases/titlecase.png") center/cover no-repeat;
+  background: url("img/cases/titlecase.png") center/cover no-repeat;
 }
 
 .battlepass1-card__image {
-  background: url("/images/battlepass/battlepass.png") center/cover no-repeat;
+  background: url("img/battlepass/battlepass.png") center/cover no-repeat;
 }
 
 .battlepass2-card__image {
-  background: url("/images/battlepass/battlelvl.png") center/cover no-repeat;
+  background: url("img/battlepass/battlelvl.png") center/cover no-repeat;
 }
 
 .tokens1-card__image {
-  background: url("/images/tokens/small-tokens.jpg") center/cover no-repeat;
+  background: url("img/tokens/small-tokens.jpg") center/cover no-repeat;
 }
 
 .tokens2-card__image {
-  background: url("/images/tokens/small-tokens.jpg") center/cover no-repeat;
+  background: url("img/tokens/small-tokens.jpg") center/cover no-repeat;
 }
 
 .tokens3-card__image {
-  background: url("/images/tokens/small-tokens.jpg") center/cover no-repeat;
+  background: url("img/tokens/small-tokens.jpg") center/cover no-repeat;
 }
 
 .tokens4-card__image {
-  background: url("/images/tokens/a-lot-tokens.jpg") center/cover no-repeat;
+  background: url("img/tokens/a-lot-tokens.jpg") center/cover no-repeat;
 }
 
 .tokens5-card__image {
-  background: url("/images/tokens/a-lot-tokens.jpg") center/cover no-repeat;
+  background: url("img/tokens/a-lot-tokens.jpg") center/cover no-repeat;
 }
 
 .someone1-card__image {
-  background: url("/images/someone/unban.jpg") center/cover no-repeat;
+  background: url("img/someone/unban.jpg") center/cover no-repeat;
 }
 
 .someone2-card__image {
-  background: url("/images/someone/unmute.jpg") center/cover no-repeat;
+  background: url("img/someone/unmute.jpg") center/cover no-repeat;
 }
 
 .someone3-card__image {
-  background: url("/images/someone/changedonate.png") center/cover no-repeat;
+  background: url("img/someone/changedonate.png") center/cover no-repeat;
 }
 
 .someone4-card__image {
-  background: url("/images/someone/customtitle.jpg") center/cover no-repeat;
-}
-
-@media (max-width: 1225px) and (hover: hover) {
-  .products__btn:hover {
-    box-shadow: 11px 40px 28px -13px rgba(34, 60, 80, 0.26);
-    transform: translate(0, -7px);
-    color: #ffffff;
-    background: rgb(255, 81, 0);
-  }
-}
-@media (max-width: 1225px) {
-  .header__online {
-    display: none;
-  }
-  .header__burgeronline {
-    display: flex;
-  }
-  .header__menu {
-    display: none;
-  }
-  .header__burgermenubtn {
-    display: flex;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-  }
-  .header__burgermenu {
-    display: block;
-  }
-  .header__img {
-    position: absolute;
-    z-index: 99997;
-    top: 30px;
-    left: 30px;
-    width: 100px;
-    height: 100px;
-    background: url("/images/bluespace.png") center/cover no-repeat;
-    border-radius: 30%;
-  }
-  .products__btn {
-    background: #f1f1ed;
-    font-size: 18px;
-    border-radius: 10px;
-    font-weight: 500;
-    height: 52px;
-    width: 175px;
-    transition: all 0.5s ease;
-  }
-  .active {
-    background: rgb(255, 102, 0);
-    color: #ffffff;
-  }
-}
-@media (max-width: 1067px) and (hover: hover) {
-  .products__btn:hover {
-    box-shadow: 11px 40px 28px -13px rgba(34, 60, 80, 0.26);
-    transform: translate(0, -7px);
-    color: #ffffff;
-    background: rgb(255, 81, 0);
-  }
-}
-@media (max-width: 1067px) {
-  .products__btn {
-    background: #f1f1ed;
-    font-size: 16px;
-    border-radius: 10px;
-    font-weight: 500;
-    height: 52px;
-    width: 145px;
-    transition: all 0.5s ease;
-  }
-  .active {
-    background: rgb(255, 102, 0);
-    color: #ffffff;
-  }
-  .slider__image-container {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    max-width: 1067px;
-    height: 500px;
-    opacity: 0.8;
-    box-shadow: 11px 12px 40px 0px rgba(255, 138, 4, 0.5);
-    background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 145, 0));
-  }
-  .slider__title {
-    font-family: "Tektur", sans-serif;
-    margin: 0 0 0 40px;
-    width: 500px;
-    font-size: 45px;
-    color: #ffffff;
-  }
-  .slider__image {
-    max-height: 300px;
-    max-width: 300px;
-  }
-}
-@media (max-width: 880px) and (hover: hover) {
-  .products__btn:hover {
-    box-shadow: 11px 40px 28px -13px rgba(34, 60, 80, 0.26);
-    transform: translate(0, -7px);
-    color: #ffffff;
-    background: rgb(255, 81, 0);
-  }
-}
-@media (max-width: 880px) {
-  .products__btn {
-    background: #f1f1ed;
-    font-size: 16px;
-    border-radius: 10px;
-    font-weight: 500;
-    height: 52px;
-    width: 115px;
-    transition: all 0.5s ease;
-  }
-  .active {
-    background: rgb(255, 102, 0);
-    color: #ffffff;
-  }
-  .slider__image-container {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    max-width: 880px;
-    height: 500px;
-    opacity: 0.8;
-    box-shadow: 11px 12px 40px 0px rgba(255, 138, 4, 0.5);
-    background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 145, 0));
-  }
-  .slider__title {
-    font-family: "Tektur", sans-serif;
-    margin: 0 0 0 40px;
-    width: 450px;
-    font-size: 40px;
-    color: #ffffff;
-  }
-  .slider__image {
-    max-height: 300px;
-    max-width: 300px;
-  }
-}
-@media (max-width: 787px) and (hover: hover) {
-  .products__btn:hover {
-    box-shadow: 11px 40px 28px -13px rgba(34, 60, 80, 0.26);
-    transform: translate(0, -7px);
-    color: #ffffff;
-    background: rgb(255, 81, 0);
-  }
-  .footer__column2-link:hover {
-    color: #ffffff;
-    text-decoration: underline;
-  }
-}
-@media (max-width: 787px) and (hover: none) {
-  .footer__column2-link:active {
-    color: #ffffff;
-    text-decoration: underline;
-  }
-}
-@media (max-width: 787px) {
-  .products__bg {
-    box-shadow: 11px 12px 40px 0px rgba(255, 138, 4, 0.5);
-    background: linear-gradient(to right, rgb(255, 187, 0), rgb(255, 128, 0));
-    border-radius: 26px;
-    border: 1px solid #cccccc;
-  }
-  .products__items {
-    display: flex;
-    font-family: "Firs", sans-serif;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-  }
-  .products__btn {
-    margin: 10px;
-    background: #f1f1ed;
-    font-size: 16px;
-    border-radius: 10px;
-    font-weight: 500;
-    height: 52px;
-    width: 135px;
-    transition: all 0.5s ease;
-  }
-  .active {
-    background: rgb(255, 102, 0);
-    color: #ffffff;
-  }
-  .slider__image-container {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    max-width: 787px;
-    height: 400px;
-    opacity: 0.8;
-    box-shadow: 11px 12px 40px 0px rgba(255, 138, 4, 0.5);
-    background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 145, 0));
-  }
-  .slider__title {
-    font-family: "Tektur", sans-serif;
-    margin: 0 0 0 40px;
-    width: 350px;
-    font-size: 30px;
-    color: #ffffff;
-  }
-  .slider__image {
-    max-height: 300px;
-    max-width: 300px;
-  }
-  .footer {
-    z-index: 100;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin: 0 0 30px 0;
-    min-height: 500px;
-  }
-  .footer .container {
-    padding: 0;
-    min-width: 100%;
-  }
-  .footer__bg {
-    z-index: 100;
-    background: #353535;
-    min-height: 100%;
-  }
-  .footer__row {
-    z-index: 100;
-    padding: 0 10px 0 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 100%;
-    justify-content: center;
-  }
-  .footer__column-1 {
-    order: 1;
-    margin: 20px;
-    z-index: 100;
-    max-width: 200px;
-    height: 136px;
-  }
-  .footer__column-2 {
-    order: 3;
-    margin: 20px;
-    z-index: 100;
-    max-width: 200px;
-    height: 100px;
-  }
-  .footer__column2-heading {
-    z-index: 100;
-    color: rgb(135, 138, 160);
-    font-family: "Unbounded", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    padding: 0 0 20px 0;
-  }
-  .footer__column2-link {
-    z-index: 100;
-    transition: all 0.5s ease;
-  }
-  .footer__column-3 {
-    order: 2;
-    margin: 20px;
-    z-index: 100;
-    max-width: 200px;
-    height: 136px;
-  }
-  .paymentform {
-    position: fixed;
-    z-index: 99997;
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    visibility: hidden;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    opacity: 0;
-    background: rgba(0, 0, 0, 0.3);
-  }
-  .paymentform__title {
-    background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 145, 0));
-    z-index: 99997;
-    border-radius: 10px;
-    display: flex;
-    height: 55px;
-    z-index: 100;
-    width: 340px;
-    position: absolute;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .paymentform__title span {
-    font-family: "minecraft", sans-serif;
-    word-spacing: 6px;
-    letter-spacing: 2px;
-    line-height: 1.7;
-    font-size: 17px;
-    font-weight: 700;
-    color: #ffffff;
-  }
-  .paymentform__decoration {
-    z-index: 1;
-    transform: rotate(4deg) translate(95px, -76px);
-    width: 70px;
-    height: 70px;
-    position: relative;
-    background: url("/images/icons/Christmas-Tree-Template.svg") center/100% 100% no-repeat;
-  }
-  .paymentform__decoration:before {
-    content: "";
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: rotate(-13deg) translate(0px, 29px);
-    width: 22px;
-    height: 71px;
-    background: url("/images/icons/Christmas-Candle.svg") center/100% 100% no-repeat;
-  }
-  .paymentform__decoration:after {
-    content: "";
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: rotate(-19deg) translate(-194px, -44px);
-    width: 61px;
-    height: 61px;
-    background: url("/images/icons/christmas-sock.svg") center/100% 100% no-repeat;
-  }
-  .paymentform__box {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    max-width: 70%;
-    z-index: 1;
-    transform: scale(0.5);
-    transition: all 0.8s ease;
-    background: #ffffff;
-  }
-  .paymentform__form {
-    display: flex;
-    max-height: 420px;
-    max-width: 600px;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  .paymentform__nickname {
-    max-width: 100%;
-    font-size: 16px;
-    max-height: 50px;
-    background: #f4f4f4;
-  }
-  .paymentform__nickname:focus {
-    box-shadow: 2px 25px 27px -13px rgba(204, 201, 195, 0.26);
-  }
-  .paymentform__email {
-    max-width: 100%;
-    font-size: 16px;
-    max-height: 50px;
-    background: #f4f4f4;
-  }
-  .paymentform__email:focus {
-    box-shadow: 2px 25px 27px -13px rgba(204, 201, 195, 0.26);
-  }
-  .paymentform__promo {
-    max-width: 100%;
-    font-size: 16px;
-    max-height: 50px;
-    background: #f4f4f4;
-  }
-  .paymentform__promo:focus {
-    box-shadow: 2px 25px 27px -13px rgba(204, 201, 195, 0.26);
-  }
-  .paymentform__nickname-img {
-    background: url("/images/icons/nickname.svg") center/20px 20px no-repeat #f4f4f4;
-  }
-  .paymentform__email-img {
-    background: url("/images/icons/email.svg") center/20px 20px no-repeat #f4f4f4;
-  }
-  .paymentform__promo-img {
-    background: url("/images/icons/promo.svg") center/20px 20px no-repeat #f4f4f4;
-  }
-  .paymentform__btn {
-    color: #ffffff;
-    font-family: "Unbounded", sans-serif;
-    border-radius: 14px;
-    display: block;
-    max-width: 140px;
-    font-weight: 600;
-    font-size: 20px;
-    height: 50px;
-    background: #ff8800;
-  }
-  .paymentform .paymentimg {
-    font-size: 16px;
-    width: 400px;
-    width: 44px;
-    height: 50px;
-  }
-  .paymentform .row {
-    display: flex;
-  }
-  .paymentform__row4 {
-    width: 400px;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .paymentform__totalcost {
-    font-size: 20px;
-    letter-spacing: 2px;
-    word-spacing: 3px;
-    font-weight: 600;
-    color: #000000;
-    font-family: "Unbounded", sans-serif;
-  }
-  .paymentform__totalcost span {
-    color: #ff5207;
-  }
-  .paymentform__radiocontainer {
-    width: 449px;
-  }
-  .paymentform__radiocontainer a {
-    line-height: 1.5;
-    font-size: 16px;
-    color: #ff6a00;
-  }
-  .paymentform__radiocontainer p {
-    line-height: 1.5;
-    display: inline-block;
-    font-size: 16px;
-  }
-  .paymentform__closebtn {
-    background: #ffffff;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-  }
-  .paymentform .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 787px;
-  }
-  .check-box {
-    width: 0;
-    height: 0;
-    transition: all 3s ease;
-    opacity: 0;
-    z-index: -1;
-  }
-  .check-box:checked + .check-style:before {
-    display: block;
-  }
-  .check-style {
-    display: inline-block;
-    width: 24px;
-    font-size: 24px;
-    margin-right: 5px;
-    vertical-align: text-bottom;
-    position: relative;
-    height: 24px;
-    border-radius: 8px;
-    border: 2px solid rgb(255, 123, 0);
-  }
-  .check-style:before {
-    content: "";
-    background: url("/images/icons/agreement-checkbox.svg") 0 0 no-repeat;
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 50%;
-    display: none;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .paymentform.open {
-    pointer-events: auto;
-    visibility: visible;
-    opacity: 1;
-  }
-  .paymentform.open .paymentform__box {
-    transform: scale(1);
-  }
-  .nothing-cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 12px;
-    color: #ffffff;
-    font-size: 24px;
-    font-family: "Unbounded", sans-serif;
-    background: #ff4141;
-    width: 500px;
-    height: 300px;
-  }
-  .notification-container {
-    position: fixed;
-    top: 20px !important;
-    right: 10px !important;
-    z-index: 99998;
-  }
-  .notification {
-    background: #f44336;
-    color: #fff;
-    padding: 15px 20px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    animation: fadeIn 0.3s ease-in-out;
-  }
-  .notification .close-btn {
-    margin-left: 15px;
-    cursor: pointer;
-    font-size: 18px;
-  }
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-}
-@media (max-width: 713px) and (hover: hover) {
-  .products__btn:hover {
-    box-shadow: 11px 40px 28px -13px rgba(34, 60, 80, 0.26);
-    transform: translate(0, -7px);
-    color: #ffffff;
-    background: rgb(255, 81, 0);
-  }
-}
-@media (max-width: 713px) {
-  .products__bg {
-    box-shadow: 11px 12px 40px 0px rgba(255, 138, 4, 0.5);
-    background: linear-gradient(to right, rgb(255, 187, 0), rgb(255, 128, 0));
-    border-radius: 26px;
-    border: 1px solid #cccccc;
-  }
-  .products__items {
-    display: flex;
-    font-family: "Firs", sans-serif;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-  }
-  .products__btn {
-    margin: 10px;
-    background: #f1f1ed;
-    font-size: 16px;
-    border-radius: 10px;
-    font-weight: 500;
-    height: 52px;
-    width: 135px;
-    transition: all 0.5s ease;
-  }
-  .active {
-    background: rgb(255, 102, 0);
-    color: #ffffff;
-  }
-  .slider__image-container {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    max-width: 713px;
-    height: 300px;
-    opacity: 0.8;
-    box-shadow: 11px 12px 40px 0px rgba(255, 138, 4, 0.5);
-    background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 145, 0));
-  }
-  .slider__title {
-    font-family: "Tektur", sans-serif;
-    margin: 0 0 0 40px;
-    width: 300px;
-    font-size: 30px;
-    color: #ffffff;
-  }
-  .slider__image {
-    max-height: 200px;
-    max-width: 200px;
-  }
-  .notification-container {
-    position: fixed;
-    top: 20px !important;
-    right: 0px !important;
-    z-index: 99998;
-  }
-}
-@media (max-width: 596px) and (hover: hover) {
-  .products__btn:hover {
-    box-shadow: 11px 40px 28px -13px rgba(34, 60, 80, 0.26);
-    transform: translate(0, -7px);
-    color: #ffffff;
-    background: rgb(255, 81, 0);
-  }
-  .header__burgerlink-item:hover {
-    color: rgba(188, 162, 162, 0.837);
-    text-decoration: underline;
-  }
-}
-@media (max-width: 596px) and (hover: none) {
-  .header__burgerlink-item:active {
-    color: rgba(188, 162, 162, 0.837);
-    text-decoration: underline;
-  }
-}
-@media (max-width: 596px) {
-  .products__bg {
-    box-shadow: 11px 12px 40px 0px rgba(255, 138, 4, 0.5);
-    background: linear-gradient(to right, rgb(255, 187, 0), rgb(255, 128, 0));
-    border-radius: 26px;
-    border: 1px solid #cccccc;
-  }
-  .products__items {
-    display: flex;
-    font-family: "Firs", sans-serif;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-  }
-  .products__btn {
-    margin: 10px;
-    background: #f1f1ed;
-    font-size: 16px;
-    border-radius: 10px;
-    font-weight: 500;
-    height: 52px;
-    width: 135px;
-    transition: all 0.5s ease;
-  }
-  .active {
-    background: rgb(255, 102, 0);
-    color: #ffffff;
-  }
-  .slider__image-container {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    max-width: 596px;
-    height: 250px;
-    opacity: 0.8;
-    box-shadow: 11px 12px 40px 0px rgba(255, 138, 4, 0.5);
-    background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 145, 0));
-  }
-  .slider__title {
-    font-family: "Tektur", sans-serif;
-    margin: 0 0 0 40px;
-    width: 240px;
-    font-size: 24px;
-    color: #ffffff;
-  }
-  .slider__image {
-    max-height: 150px;
-    max-width: 150px;
-  }
-  .paymentform {
-    position: fixed;
-    z-index: 99997;
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    visibility: hidden;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    opacity: 0;
-    background: rgba(0, 0, 0, 0.3);
-  }
-  .paymentform__title {
-    background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 145, 0));
-    z-index: 99997;
-    border-radius: 10px;
-    display: flex;
-    height: 55px;
-    z-index: 100;
-    width: 340px;
-    position: absolute;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .paymentform__title span {
-    font-family: "minecraft", sans-serif;
-    word-spacing: 6px;
-    letter-spacing: 2px;
-    line-height: 1.7;
-    font-size: 17px;
-    font-weight: 700;
-    color: #ffffff;
-  }
-  .paymentform__decoration {
-    z-index: 1;
-    transform: rotate(4deg) translate(95px, -76px);
-    width: 70px;
-    height: 70px;
-    position: relative;
-    background: url("/images/icons/Christmas-Tree-Template.svg") center/100% 100% no-repeat;
-  }
-  .paymentform__decoration:before {
-    content: "";
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: rotate(-13deg) translate(0px, 29px);
-    width: 22px;
-    height: 71px;
-    background: url("/images/icons/Christmas-Candle.svg") center/100% 100% no-repeat;
-  }
-  .paymentform__decoration:after {
-    content: "";
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: rotate(-19deg) translate(-194px, -44px);
-    width: 61px;
-    height: 61px;
-    background: url("/images/icons/christmas-sock.svg") center/100% 100% no-repeat;
-  }
-  .paymentform__box {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    max-width: 60%;
-    z-index: 1;
-    transform: scale(0.5);
-    transition: all 0.8s ease;
-    background: #ffffff;
-  }
-  .paymentform__form {
-    display: flex;
-    max-height: 420px;
-    max-width: 600px;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  .paymentform__nickname {
-    max-width: 70%;
-    font-size: 16px;
-    max-height: 50px;
-    background: #f4f4f4;
-  }
-  .paymentform__nickname:focus {
-    box-shadow: 2px 25px 27px -13px rgba(204, 201, 195, 0.26);
-  }
-  .paymentform__email {
-    max-width: 70%;
-    font-size: 16px;
-    max-height: 50px;
-    background: #f4f4f4;
-  }
-  .paymentform__email:focus {
-    box-shadow: 2px 25px 27px -13px rgba(204, 201, 195, 0.26);
-  }
-  .paymentform__promo {
-    max-width: 70%;
-    font-size: 16px;
-    max-height: 50px;
-    background: #f4f4f4;
-  }
-  .paymentform__promo:focus {
-    box-shadow: 2px 25px 27px -13px rgba(204, 201, 195, 0.26);
-  }
-  .paymentform__nickname-img {
-    background: url("/images/icons/nickname.svg") center/20px 20px no-repeat #f4f4f4;
-  }
-  .paymentform__email-img {
-    background: url("/images/icons/email.svg") center/20px 20px no-repeat #f4f4f4;
-  }
-  .paymentform__promo-img {
-    background: url("/images/icons/promo.svg") center/20px 20px no-repeat #f4f4f4;
-  }
-  .paymentform__btn {
-    color: #ffffff;
-    font-family: "Unbounded", sans-serif;
-    border-radius: 14px;
-    display: block;
-    max-width: 110px;
-    font-weight: 500;
-    font-size: 20px;
-    height: 45px;
-    background: #ff8800;
-  }
-  .paymentform .paymentimg {
-    font-size: 16px;
-    width: 400px;
-    width: 44px;
-    height: 50px;
-  }
-  .paymentform .row {
-    display: flex;
-    justify-content: center;
-  }
-  .paymentform .row1 {
-    display: flex !important;
-    justify-content: space-around !important;
-  }
-  .paymentform__row4 {
-    width: 400px;
-    display: flex;
-    align-items: center;
-  }
-  .paymentform__totalcost {
-    font-size: 20px;
-    letter-spacing: 2px;
-    word-spacing: 3px;
-    font-weight: 600;
-    color: #000000;
-    font-family: "Unbounded", sans-serif;
-  }
-  .paymentform__totalcost span {
-    color: #ff5207;
-  }
-  .paymentform__radiocontainer {
-    width: 80%;
-  }
-  .paymentform__radiocontainer a {
-    line-height: 1.5;
-    font-size: 16px;
-    color: #ff6a00;
-  }
-  .paymentform__radiocontainer p {
-    line-height: 1.5;
-    display: inline-block;
-    font-size: 16px;
-  }
-  .paymentform__closebtn {
-    background: #ffffff;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-  }
-  .paymentform .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 787px;
-  }
-  .check-box {
-    width: 0;
-    height: 0;
-    transition: all 3s ease;
-    opacity: 0;
-    z-index: -1;
-  }
-  .check-box:checked + .check-style:before {
-    display: block;
-  }
-  .check-style {
-    display: inline-block;
-    width: 24px;
-    font-size: 24px;
-    margin-right: 5px;
-    vertical-align: text-bottom;
-    position: relative;
-    height: 24px;
-    border-radius: 8px;
-    border: 2px solid rgb(255, 123, 0);
-  }
-  .check-style:before {
-    content: "";
-    background: url("/images/icons/agreement-checkbox.svg") 0 0 no-repeat;
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 50%;
-    display: none;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .paymentform.open {
-    pointer-events: auto;
-    visibility: visible;
-    opacity: 1;
-  }
-  .paymentform.open .paymentform__box {
-    transform: scale(1);
-  }
-  .nothing-cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 12px;
-    color: #ffffff;
-    font-size: 24px;
-    font-family: "Unbounded", sans-serif;
-    background: #ff4141;
-    width: 400px;
-    height: 300px;
-  }
-  .header__burgermenu {
-    position: fixed;
-    z-index: 99897;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #e2e2e2 !important;
-    color: #ffffff;
-    overflow: hidden;
-    max-height: 0; /* Меню скрыто */
-    transition: opacity 1s ease, max-height 1s ease;
-  }
-  .header__burgermenu.active {
-    max-height: 400px !important; /* Достаточно для содержания всех элементов меню */
-  }
-  .header__burgerlink-item {
-    font-size: 18px;
-    letter-spacing: 2px;
-    font-weight: 700;
-    color: #5a5a5a;
-    transition: all 0.7s ease;
-  }
-  .header__burgeritems {
-    padding: 135px 0 !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .header__burgerlinks {
-    padding: 5px 0;
-  }
-  .header__burgeronline {
-    margin: 25px 0 0 0;
-    background: linear-gradient(to right, rgb(255, 145, 0), rgb(255, 145, 0));
-    width: 185.05px;
-    font-family: "minecraft", sans-serif;
-    height: 48px;
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    line-height: 1.21;
-    font-weight: 700;
-    font-size: 14px;
-  }
-}
-@media (max-width: 514px) and (hover: hover) {
-  .products__btn:hover {
-    box-shadow: 11px 40px 28px -13px rgba(34, 60, 80, 0.26);
-    transform: translate(0, -7px);
-    color: #ffffff;
-    background: rgb(255, 81, 0);
-  }
-}
-@media (max-width: 514px) {
-  .products__bg {
-    box-shadow: 11px 12px 40px 0px rgba(255, 138, 4, 0.5);
-    background: linear-gradient(to right, rgb(255, 187, 0), rgb(255, 128, 0));
-    border-radius: 26px;
-    border: 1px solid #cccccc;
-  }
-  .products__items {
-    display: flex;
-    font-family: "Firs", sans-serif;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 270px;
-  }
-  .products__btn {
-    background: #f1f1ed;
-    font-size: 16px;
-    border-radius: 10px;
-    font-weight: 500;
-    height: 52px;
-    width: 135px;
-    transition: all 0.5s ease;
-  }
-  .active {
-    background: rgb(255, 102, 0);
-    color: #ffffff;
-  }
-  .paymentform {
-    position: fixed;
-    z-index: 99997;
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    visibility: hidden;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    opacity: 0;
-    background: rgba(0, 0, 0, 0.3);
-  }
-  .paymentform__title {
-    background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 145, 0));
-    z-index: 99997;
-    border-radius: 10px;
-    display: flex;
-    height: 45px;
-    z-index: 100;
-    width: 280px;
-    position: absolute;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .paymentform__title span {
-    font-family: "minecraft", sans-serif;
-    word-spacing: 6px;
-    letter-spacing: 2px;
-    line-height: 1.7;
-    font-size: 14px;
-    font-weight: 700;
-    color: #ffffff;
-  }
-  .paymentform__decoration {
-    z-index: 1;
-    transform: rotate(4deg) translate(95px, -76px);
-    width: 70px;
-    height: 70px;
-    position: relative;
-    background: url("/images/icons/Christmas-Tree-Template.svg") center/100% 100% no-repeat;
-  }
-  .paymentform__decoration:before {
-    content: "";
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: rotate(-13deg) translate(0px, 29px);
-    width: 22px;
-    height: 71px;
-    background: url("/images/icons/Christmas-Candle.svg") center/100% 100% no-repeat;
-  }
-  .paymentform__decoration:after {
-    content: "";
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: rotate(-19deg) translate(-194px, -44px);
-    width: 61px;
-    height: 61px;
-    background: url("/images/icons/christmas-sock.svg") center/100% 100% no-repeat;
-  }
-  .paymentform__box {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    max-width: 50%;
-    z-index: 1;
-    transform: scale(0.5);
-    transition: all 0.8s ease;
-    background: #ffffff;
-  }
-  .paymentform__form {
-    display: flex;
-    max-height: 420px;
-    max-width: 600px;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  .paymentform__nickname {
-    max-width: 55%;
-    font-size: 16px;
-    max-height: 50px;
-    background: #f4f4f4;
-  }
-  .paymentform__nickname:focus {
-    box-shadow: 2px 25px 27px -13px rgba(204, 201, 195, 0.26);
-  }
-  .paymentform__email {
-    max-width: 55%;
-    font-size: 16px;
-    max-height: 50px;
-    background: #f4f4f4;
-  }
-  .paymentform__email:focus {
-    box-shadow: 2px 25px 27px -13px rgba(204, 201, 195, 0.26);
-  }
-  .paymentform__promo {
-    max-width: 55%;
-    font-size: 16px;
-    max-height: 50px;
-    background: #f4f4f4;
-  }
-  .paymentform__promo:focus {
-    box-shadow: 2px 25px 27px -13px rgba(204, 201, 195, 0.26);
-  }
-  .paymentform__nickname-img {
-    background: url("/images/icons/nickname.svg") center/20px 20px no-repeat #f4f4f4;
-  }
-  .paymentform__email-img {
-    background: url("/images/icons/email.svg") center/20px 20px no-repeat #f4f4f4;
-  }
-  .paymentform__promo-img {
-    background: url("/images/icons/promo.svg") center/20px 20px no-repeat #f4f4f4;
-  }
-  .paymentform__btn {
-    color: #ffffff;
-    font-family: "Unbounded", sans-serif;
-    border-radius: 14px;
-    display: block;
-    max-width: 95px;
-    font-weight: 500;
-    font-size: 18px;
-    height: 40px;
-    background: #ff8800;
-  }
-  .paymentform .paymentimg {
-    font-size: 16px;
-    width: 400px;
-    width: 44px;
-    height: 50px;
-  }
-  .paymentform .row {
-    display: flex;
-    justify-content: center;
-  }
-  .paymentform .row1 {
-    display: flex !important;
-    justify-content: space-around !important;
-  }
-  .paymentform__row4 {
-    width: 350px;
-    display: flex;
-    align-items: center;
-  }
-  .paymentform__totalcost {
-    font-size: 18px;
-    letter-spacing: 2px;
-    word-spacing: 3px;
-    font-weight: 500;
-    color: #000000;
-    font-family: "Unbounded", sans-serif;
-  }
-  .paymentform__totalcost span {
-    color: #ff5207;
-  }
-  .paymentform__radiocontainer {
-    padding: 0 0 0 20px;
-    width: 74%;
-  }
-  .paymentform__radiocontainer a {
-    line-height: 1.5;
-    font-size: 16px;
-    color: #ff6a00;
-  }
-  .paymentform__radiocontainer p {
-    line-height: 1.5;
-    display: inline-block;
-    font-size: 16px;
-  }
-  .paymentform__closebtn {
-    background: #ffffff;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-  }
-  .paymentform__closebtn img {
-    width: 40px;
-    height: 40px;
-  }
-  .paymentform .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 787px;
-  }
-  .check-box {
-    width: 0;
-    height: 0;
-    transition: all 3s ease;
-    opacity: 0;
-    z-index: -1;
-  }
-  .check-box:checked + .check-style:before {
-    display: block;
-  }
-  .check-style {
-    display: inline-block;
-    width: 24px;
-    font-size: 24px;
-    margin-right: 5px;
-    vertical-align: text-bottom;
-    position: relative;
-    height: 24px;
-    border-radius: 8px;
-    border: 2px solid rgb(255, 123, 0);
-  }
-  .check-style:before {
-    content: "";
-    background: url("/images/icons/agreement-checkbox.svg") 0 0 no-repeat;
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 50%;
-    display: none;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .paymentform.open {
-    pointer-events: auto;
-    visibility: visible;
-    opacity: 1;
-  }
-  .paymentform.open .paymentform__box {
-    transform: scale(1);
-  }
-}
-@media (max-width: 477px) and (hover: hover) {
-  .products__btn:hover {
-    box-shadow: 11px 40px 28px -13px rgba(34, 60, 80, 0.26);
-    transform: translate(0, -7px);
-    color: #ffffff;
-    background: rgb(255, 81, 0);
-  }
-}
-@media (max-width: 477px) {
-  .products__btn {
-    background: #f1f1ed;
-    font-size: 16px;
-    border-radius: 10px;
-    font-weight: 500;
-    height: 52px;
-    width: 135px;
-    transition: all 0.5s ease;
-  }
-  .active {
-    background: rgb(255, 102, 0);
-    color: #ffffff;
-  }
-  .slider__image-container {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    max-width: 596px;
-    height: 250px;
-    opacity: 0.8;
-    box-shadow: 11px 12px 40px 0px rgba(255, 138, 4, 0.5);
-    background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 145, 0));
-  }
-  .slider__title {
-    font-family: "Tektur", sans-serif;
-    margin: 0 0 0 0px;
-    width: 210px;
-    font-size: 21px;
-    color: #ffffff;
-  }
-  .slider__image {
-    max-height: 140px;
-    max-width: 140px;
-  }
-  .nothing-cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 12px;
-    color: #ffffff;
-    font-size: 24px;
-    font-family: "Unbounded", sans-serif;
-    background: #ff4141;
-    width: 300px;
-    height: 300px;
-  }
-}
-@media (max-width: 421px) and (hover: hover) {
-  .products__btn:hover {
-    box-shadow: 11px 40px 28px -13px rgba(34, 60, 80, 0.26);
-    transform: translate(0, -7px);
-    color: #ffffff;
-    background: rgb(255, 81, 0);
-  }
-}
-@media (max-width: 421px) {
-  .products__bg {
-    box-shadow: 11px 12px 40px 0px rgba(255, 138, 4, 0.5);
-    background: linear-gradient(to right, rgb(255, 187, 0), rgb(255, 128, 0));
-    border-radius: 26px;
-    border: 1px solid #cccccc;
-  }
-  .products__items {
-    display: flex;
-    font-family: "Firs", sans-serif;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 270px;
-  }
-  .products__btn {
-    background: #f1f1ed;
-    font-size: 16px;
-    border-radius: 10px;
-    font-weight: 500;
-    height: 52px;
-    width: 135px;
-    transition: all 0.5s ease;
-  }
-  .active {
-    background: rgb(255, 102, 0);
-    color: #ffffff;
-  }
-  .slider__row {
-    padding: 0 10px;
-  }
-  .slider__image-container {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    max-width: 421px;
-    height: 180px;
-    opacity: 0.8;
-    box-shadow: 11px 12px 40px 0px rgba(255, 138, 4, 0.5);
-    background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 145, 0));
-  }
-  .slider__title {
-    font-family: "Tektur", sans-serif;
-    margin: 0 0 0 0px;
-    width: 200px;
-    font-size: 20px;
-    color: #ffffff;
-  }
-  .slider__image {
-    max-height: 120px;
-    max-width: 120px;
-  }
-  .paymentform {
-    position: fixed;
-    z-index: 99997;
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    visibility: hidden;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    opacity: 0;
-    background: rgba(0, 0, 0, 0.3);
-  }
-  .paymentform__title {
-    background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 145, 0));
-    z-index: 99997;
-    border-radius: 10px;
-    display: flex;
-    height: 45px;
-    z-index: 100;
-    width: 280px;
-    position: absolute;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .paymentform__title span {
-    font-family: "minecraft", sans-serif;
-    word-spacing: 6px;
-    letter-spacing: 2px;
-    line-height: 1.7;
-    font-size: 14px;
-    font-weight: 700;
-    color: #ffffff;
-  }
-  .paymentform__decoration {
-    z-index: 1;
-    transform: rotate(4deg) translate(74px, -76px);
-    width: 70px;
-    height: 70px;
-    position: relative;
-    background: url("/images/icons/Christmas-Tree-Template.svg") center/100% 100% no-repeat;
-  }
-  .paymentform__decoration:before {
-    content: "";
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: rotate(-13deg) translate(0px, 29px);
-    width: 22px;
-    height: 71px;
-    background: url("/images/icons/Christmas-Candle.svg") center/100% 100% no-repeat;
-  }
-  .paymentform__decoration:after {
-    content: "";
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: rotate(-19deg) translate(-155px, -33px);
-    width: 61px;
-    height: 61px;
-    background: url("/images/icons/christmas-sock.svg") center/100% 100% no-repeat;
-  }
-  .paymentform__box {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    max-width: 45%;
-    z-index: 1;
-    transform: scale(0.5);
-    transition: all 0.8s ease;
-    background: #ffffff;
-  }
-  .paymentform__form {
-    display: flex;
-    max-height: 380px;
-    max-width: 600px;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  .paymentform__nickname {
-    max-width: 55%;
-    font-size: 16px;
-    max-height: 45px;
-    background: #f4f4f4;
-  }
-  .paymentform__nickname:focus {
-    box-shadow: 2px 25px 27px -13px rgba(204, 201, 195, 0.26);
-  }
-  .paymentform__email {
-    max-width: 55%;
-    font-size: 16px;
-    max-height: 45px;
-    background: #f4f4f4;
-  }
-  .paymentform__email:focus {
-    box-shadow: 2px 25px 27px -13px rgba(204, 201, 195, 0.26);
-  }
-  .paymentform__promo {
-    max-width: 55%;
-    font-size: 16px;
-    max-height: 45px;
-    background: #f4f4f4;
-  }
-  .paymentform__promo:focus {
-    box-shadow: 2px 25px 27px -13px rgba(204, 201, 195, 0.26);
-  }
-  .paymentform__nickname-img {
-    background: url("/images/icons/nickname.svg") center/20px 20px no-repeat #f4f4f4;
-  }
-  .paymentform__email-img {
-    background: url("/images/icons/email.svg") center/20px 20px no-repeat #f4f4f4;
-  }
-  .paymentform__promo-img {
-    background: url("/images/icons/promo.svg") center/20px 20px no-repeat #f4f4f4;
-  }
-  .paymentform__btn {
-    color: #ffffff;
-    font-family: "Unbounded", sans-serif;
-    border-radius: 14px;
-    display: block;
-    max-width: 95px;
-    font-weight: 500;
-    font-size: 18px;
-    height: 40px;
-    background: #ff8800;
-  }
-  .paymentform .paymentimg {
-    font-size: 16px;
-    width: 400px;
-    width: 44px;
-    height: 45px;
-  }
-  .paymentform .row {
-    display: flex;
-    justify-content: center;
-  }
-  .paymentform .row1 {
-    display: flex !important;
-    justify-content: space-around !important;
-  }
-  .paymentform__row4 {
-    width: 320px;
-    display: flex;
-    align-items: center;
-  }
-  .paymentform__totalcost {
-    font-size: 17px;
-    letter-spacing: 2px;
-    word-spacing: 3px;
-    font-weight: 500;
-    color: #000000;
-    font-family: "Unbounded", sans-serif;
-  }
-  .paymentform__totalcost span {
-    color: #ff5207;
-  }
-  .paymentform__radiocontainer {
-    padding: 0 0 0 20px;
-    width: 74%;
-  }
-  .paymentform__radiocontainer a {
-    line-height: 1.5;
-    font-size: 14px;
-    color: #ff6a00;
-  }
-  .paymentform__radiocontainer p {
-    line-height: 1.5;
-    display: inline-block;
-    font-size: 14px;
-  }
-  .paymentform__closebtn {
-    background: #ffffff;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-  }
-  .paymentform__closebtn img {
-    width: 40px;
-    height: 40px;
-  }
-  .paymentform .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 787px;
-  }
-  .check-box {
-    width: 0;
-    height: 0;
-    transition: all 3s ease;
-    opacity: 0;
-    z-index: -1;
-  }
-  .check-box:checked + .check-style:before {
-    display: block;
-  }
-  .check-style {
-    display: inline-block;
-    width: 24px;
-    font-size: 24px;
-    margin-right: 5px;
-    vertical-align: text-bottom;
-    position: relative;
-    height: 24px;
-    border-radius: 8px;
-    border: 2px solid rgb(255, 123, 0);
-  }
-  .check-style:before {
-    content: "";
-    background: url("/images/icons/agreement-checkbox.svg") 0 0 no-repeat;
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 50%;
-    display: none;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .paymentform.open {
-    pointer-events: auto;
-    visibility: visible;
-    opacity: 1;
-  }
-  .paymentform.open .paymentform__box {
-    transform: scale(1);
-  }
-}
-@media (max-width: 388px) and (hover: hover) {
-  .products__btn:hover {
-    box-shadow: 11px 40px 28px -13px rgba(34, 60, 80, 0.26);
-    transform: translate(0, -7px);
-    color: #ffffff;
-    background: rgb(255, 81, 0);
-  }
-}
-@media (max-width: 388px) {
-  .products__bg {
-    box-shadow: 11px 12px 40px 0px rgba(255, 138, 4, 0.5);
-    background: linear-gradient(to right, rgb(255, 187, 0), rgb(255, 128, 0));
-    border-radius: 26px;
-    border: 1px solid #cccccc;
-  }
-  .products__items {
-    display: flex;
-    font-family: "Firs", sans-serif;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 270px;
-  }
-  .products__btn {
-    margin: 10px;
-    background: #f1f1ed;
-    font-size: 16px;
-    border-radius: 10px;
-    font-weight: 500;
-    height: 52px;
-    width: 135px;
-    transition: all 0.5s ease;
-  }
-  .active {
-    background: rgb(255, 102, 0);
-    color: #ffffff;
-  }
-  .slider__row {
-    padding: 0 10px;
-  }
-  .slider__image-container {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    max-width: 421px;
-    height: 180px;
-    opacity: 0.8;
-    box-shadow: 11px 12px 40px 0px rgba(255, 138, 4, 0.5);
-    background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 145, 0));
-  }
-  .slider__title {
-    font-family: "Tektur", sans-serif;
-    margin: 0 0 0 0px;
-    width: 180px;
-    font-size: 18px;
-    color: #ffffff;
-  }
-  .slider__image {
-    max-height: 90px;
-    max-width: 90px;
-  }
-  .paymentform {
-    position: fixed;
-    z-index: 99997;
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    visibility: hidden;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    opacity: 0;
-    background: rgba(0, 0, 0, 0.3);
-  }
-  .paymentform__title {
-    background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 145, 0));
-    z-index: 99997;
-    border-radius: 10px;
-    display: flex;
-    height: 45px;
-    z-index: 100;
-    width: 265px;
-    position: absolute;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .paymentform__title span {
-    font-family: "minecraft", sans-serif;
-    word-spacing: 6px;
-    letter-spacing: 2px;
-    line-height: 1.7;
-    font-size: 12px;
-    font-weight: 700;
-    color: #ffffff;
-  }
-  .paymentform__decoration {
-    z-index: 1;
-    transform: rotate(4deg) translate(64px, -64px);
-    width: 60px;
-    height: 60px;
-    position: relative;
-    background: url("/images/icons/Christmas-Tree-Template.svg") center/100% 100% no-repeat;
-  }
-  .paymentform__decoration:before {
-    content: "";
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: rotate(-13deg) translate(-4px, 20px);
-    width: 22px;
-    height: 71px;
-    background: url("/images/icons/Christmas-Candle.svg") center/100% 100% no-repeat;
-  }
-  .paymentform__decoration:after {
-    content: "";
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: rotate(-19deg) translate(-130px, -33px);
-    width: 55px;
-    height: 55px;
-    background: url("/images/icons/christmas-sock.svg") center/100% 100% no-repeat;
-  }
-  .paymentform__box {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    max-width: 40%;
-    z-index: 1;
-    transform: scale(0.5);
-    transition: all 0.8s ease;
-    background: #ffffff;
-  }
-  .paymentform__form {
-    display: flex;
-    max-height: 380px;
-    max-width: 600px;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  .paymentform__nickname {
-    max-width: 50%;
-    font-size: 16px;
-    max-height: 45px;
-    background: #f4f4f4;
-  }
-  .paymentform__nickname:focus {
-    box-shadow: 2px 25px 27px -13px rgba(204, 201, 195, 0.26);
-  }
-  .paymentform__email {
-    max-width: 50%;
-    font-size: 16px;
-    max-height: 45px;
-    background: #f4f4f4;
-  }
-  .paymentform__email:focus {
-    box-shadow: 2px 25px 27px -13px rgba(204, 201, 195, 0.26);
-  }
-  .paymentform__promo {
-    max-width: 50%;
-    font-size: 16px;
-    max-height: 45px;
-    background: #f4f4f4;
-  }
-  .paymentform__promo:focus {
-    box-shadow: 2px 25px 27px -13px rgba(204, 201, 195, 0.26);
-  }
-  .paymentform__nickname-img {
-    background: url("/images/icons/nickname.svg") center/20px 20px no-repeat #f4f4f4;
-  }
-  .paymentform__email-img {
-    background: url("/images/icons/email.svg") center/20px 20px no-repeat #f4f4f4;
-  }
-  .paymentform__promo-img {
-    background: url("/images/icons/promo.svg") center/20px 20px no-repeat #f4f4f4;
-  }
-  .paymentform__btn {
-    color: #ffffff;
-    font-family: "Unbounded", sans-serif;
-    border-radius: 14px;
-    display: block;
-    max-width: 95px;
-    font-weight: 500;
-    font-size: 16px;
-    height: 35px;
-    background: #ff8800;
-  }
-  .paymentform .paymentimg {
-    font-size: 16px;
-    width: 400px;
-    width: 44px;
-    height: 45px;
-  }
-  .paymentform .row {
-    display: flex;
-    justify-content: center;
-  }
-  .paymentform .row1 {
-    display: flex !important;
-    justify-content: space-around !important;
-  }
-  .paymentform__row4 {
-    width: 290px;
-    display: flex;
-    align-items: center;
-  }
-  .paymentform__totalcost {
-    font-size: 16px;
-    letter-spacing: 2px;
-    word-spacing: 3px;
-    font-weight: 500;
-    color: #000000;
-    font-family: "Unbounded", sans-serif;
-  }
-  .paymentform__totalcost span {
-    color: #ff5207;
-  }
-  .paymentform__radiocontainer {
-    padding: 0 0 0 20px;
-    width: 70%;
-  }
-  .paymentform__radiocontainer a {
-    line-height: 1.5;
-    font-size: 14px;
-    color: #ff6a00;
-  }
-  .paymentform__radiocontainer p {
-    line-height: 1.5;
-    display: inline-block;
-    font-size: 14px;
-  }
-  .paymentform__closebtn {
-    background: #ffffff;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-  }
-  .paymentform__closebtn img {
-    width: 40px;
-    height: 40px;
-  }
-  .paymentform .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 787px;
-  }
-  .check-box {
-    width: 0;
-    height: 0;
-    transition: all 3s ease;
-    opacity: 0;
-    z-index: -1;
-  }
-  .check-box:checked + .check-style:before {
-    display: block;
-  }
-  .check-style {
-    display: inline-block;
-    width: 24px;
-    font-size: 24px;
-    margin-right: 5px;
-    vertical-align: text-bottom;
-    position: relative;
-    height: 24px;
-    border-radius: 8px;
-    border: 2px solid rgb(255, 123, 0);
-  }
-  .check-style:before {
-    content: "";
-    background: url("/images/icons/agreement-checkbox.svg") 0 0 no-repeat;
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 50%;
-    display: none;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .paymentform.open {
-    pointer-events: auto;
-    visibility: visible;
-    opacity: 1;
-  }
-  .paymentform.open .paymentform__box {
-    transform: scale(1);
-  }
-  .nothing-cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 12px;
-    color: #ffffff;
-    font-size: 20px;
-    font-family: "Unbounded", sans-serif;
-    background: #ff4141;
-    width: 250px;
-    height: 250px;
-  }
-}
-@media (max-width: 357px) and (hover: hover) {
-  .products__btn:hover {
-    box-shadow: 11px 40px 28px -13px rgba(34, 60, 80, 0.26);
-    transform: translate(0, -7px);
-    color: #ffffff;
-    background: rgb(255, 81, 0);
-  }
-}
-@media (max-width: 357px) {
-  .products__bg {
-    box-shadow: 11px 12px 40px 0px rgba(255, 138, 4, 0.5);
-    background: linear-gradient(to right, rgb(255, 187, 0), rgb(255, 128, 0));
-    border-radius: 26px;
-    border: 1px solid #cccccc;
-  }
-  .products__items {
-    display: flex;
-    font-family: "Firs", sans-serif;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-  }
-  .products__btn {
-    margin: 10px;
-    background: #f1f1ed;
-    font-size: 16px;
-    border-radius: 10px;
-    font-weight: 500;
-    height: 52px;
-    width: 135px;
-    transition: all 0.5s ease;
-  }
-  .active {
-    background: rgb(255, 102, 0);
-    color: #ffffff;
-  }
-}
-@media (max-width: 338px) and (hover: hover) {
-  .products__btn:hover {
-    box-shadow: 11px 40px 28px -13px rgba(34, 60, 80, 0.26);
-    transform: translate(0, -7px);
-    color: #ffffff;
-    background: rgb(255, 81, 0);
-  }
-  .header__burgerlink-item:hover {
-    color: rgba(188, 162, 162, 0.837);
-    text-decoration: underline;
-  }
-}
-@media (max-width: 338px) and (hover: none) {
-  .header__burgerlink-item:active {
-    color: rgba(188, 162, 162, 0.837);
-    text-decoration: underline;
-  }
-}
-@media (max-width: 338px) {
-  .products__btn {
-    background: #f1f1ed;
-    font-size: 16px;
-    border-radius: 10px;
-    font-weight: 500;
-    height: 52px;
-    width: 135px;
-    transition: all 0.5s ease;
-  }
-  .active {
-    background: rgb(255, 102, 0);
-    color: #ffffff;
-  }
-  .slider__row {
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 0 10px;
-  }
-  .slider__image-container {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    max-width: 421px;
-    height: 180px;
-    opacity: 0.8;
-    box-shadow: 11px 12px 40px 0px rgba(255, 138, 4, 0.5);
-    background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 145, 0));
-  }
-  .slider__title {
-    font-family: "Tektur", sans-serif;
-    margin: 0 0 0 0px;
-    width: 160px;
-    font-size: 16px;
-    color: #ffffff;
-  }
-  .slider__image {
-    max-height: 80px;
-    max-width: 80px;
-  }
-  .card {
-    width: 250px;
-    height: 320px;
-  }
-  .title {
-    font-size: 18px;
-  }
-  .img {
-    width: 190px;
-    height: 190px;
-    margin: 10px 0 20px 0;
-    border-radius: 14px;
-    min-width: 190px;
-    min-height: 190px;
-  }
-  .paymentform {
-    position: fixed;
-    z-index: 99997;
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    visibility: hidden;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    opacity: 0;
-    background: rgba(0, 0, 0, 0.3);
-  }
-  .paymentform__title {
-    background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 145, 0));
-    z-index: 99997;
-    border-radius: 10px;
-    display: flex;
-    height: 45px;
-    z-index: 100;
-    width: 245px;
-    position: absolute;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .paymentform__title span {
-    font-family: "minecraft", sans-serif;
-    word-spacing: 6px;
-    letter-spacing: 2px;
-    line-height: 1.7;
-    font-size: 12px;
-    font-weight: 700;
-    color: #ffffff;
-  }
-  .paymentform__decoration {
-    z-index: 1;
-    transform: rotate(4deg) translate(51px, -62px);
-    width: 60px;
-    height: 60px;
-    position: relative;
-    background: url("/images/icons/Christmas-Tree-Template.svg") center/100% 100% no-repeat;
-  }
-  .paymentform__decoration:before {
-    content: "";
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: rotate(-13deg) translate(-4px, 20px);
-    width: 22px;
-    height: 71px;
-    background: url("/images/icons/Christmas-Candle.svg") center/100% 100% no-repeat;
-  }
-  .paymentform__decoration:after {
-    content: "";
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: rotate(-19deg) translate(-130px, -33px);
-    width: 55px;
-    height: 55px;
-    background: url("/images/icons/christmas-sock.svg") center/100% 100% no-repeat;
-  }
-  .paymentform__box {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    max-width: 35%;
-    z-index: 1;
-    transform: scale(0.5);
-    transition: all 0.8s ease;
-    background: #ffffff;
-  }
-  .paymentform__form {
-    display: flex;
-    max-height: 380px;
-    max-width: 600px;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  .paymentform__nickname {
-    max-width: 40%;
-    font-size: 14px;
-    max-height: 40px;
-    background: #f4f4f4;
-  }
-  .paymentform__nickname:focus {
-    box-shadow: 2px 25px 27px -13px rgba(204, 201, 195, 0.26);
-  }
-  .paymentform__email {
-    max-width: 40%;
-    font-size: 14px;
-    max-height: 40px;
-    background: #f4f4f4;
-  }
-  .paymentform__email:focus {
-    box-shadow: 2px 25px 27px -13px rgba(204, 201, 195, 0.26);
-  }
-  .paymentform__promo {
-    max-width: 40%;
-    font-size: 14px;
-    max-height: 40px;
-    background: #f4f4f4;
-  }
-  .paymentform__promo:focus {
-    box-shadow: 2px 25px 27px -13px rgba(204, 201, 195, 0.26);
-  }
-  .paymentform__nickname-img {
-    background: url("/images/icons/nickname.svg") center/20px 20px no-repeat #f4f4f4;
-  }
-  .paymentform__email-img {
-    background: url("/images/icons/email.svg") center/20px 20px no-repeat #f4f4f4;
-  }
-  .paymentform__promo-img {
-    background: url("/images/icons/promo.svg") center/20px 20px no-repeat #f4f4f4;
-  }
-  .paymentform__btn {
-    color: #ffffff;
-    font-family: "Unbounded", sans-serif;
-    border-radius: 14px;
-    display: block;
-    max-width: 95px;
-    font-weight: 500;
-    font-size: 16px;
-    height: 35px;
-    background: #ff8800;
-  }
-  .paymentform .paymentimg {
-    font-size: 16px;
-    width: 400px;
-    width: 44px;
-    height: 40px;
-  }
-  .paymentform .row {
-    display: flex;
-    justify-content: center;
-  }
-  .paymentform .row1 {
-    display: flex !important;
-    justify-content: space-around !important;
-  }
-  .paymentform__row4 {
-    width: 290px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  .paymentform__totalcost {
-    font-size: 16px;
-    letter-spacing: 2px;
-    word-spacing: 3px;
-    font-weight: 500;
-    color: #000000;
-    font-family: "Unbounded", sans-serif;
-  }
-  .paymentform__totalcost span {
-    color: #ff5207;
-  }
-  .paymentform__radiocontainer {
-    padding: 0 0 0 30px;
-    width: 65%;
-  }
-  .paymentform__radiocontainer a {
-    line-height: 1.5;
-    font-size: 14px;
-    color: #ff6a00;
-  }
-  .paymentform__radiocontainer p {
-    line-height: 1.5;
-    display: inline-block;
-    font-size: 14px;
-  }
-  .paymentform__closebtn {
-    background: #ffffff;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-  }
-  .paymentform__closebtn img {
-    width: 35px;
-    height: 35px;
-  }
-  .paymentform .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 787px;
-  }
-  .check-box {
-    width: 0;
-    height: 0;
-    transition: all 3s ease;
-    opacity: 0;
-    z-index: -1;
-  }
-  .check-box:checked + .check-style:before {
-    display: block;
-  }
-  .check-style {
-    display: inline-block;
-    width: 24px;
-    font-size: 24px;
-    margin-right: 5px;
-    vertical-align: text-bottom;
-    position: relative;
-    height: 24px;
-    border-radius: 8px;
-    border: 2px solid rgb(255, 123, 0);
-  }
-  .check-style:before {
-    content: "";
-    background: url("/images/icons/agreement-checkbox.svg") 0 0 no-repeat;
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 50%;
-    display: none;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .paymentform.open {
-    pointer-events: auto;
-    visibility: visible;
-    opacity: 1;
-  }
-  .paymentform.open .paymentform__box {
-    transform: scale(1);
-  }
-}
-.header__burgermenu {
-  position: fixed;
-  z-index: 99897;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #e2e2e2;
-  color: #ffffff;
-  overflow: hidden;
-  max-height: 0; /* Меню скрыто */
-  transition: opacity 1s ease, max-height 1s ease;
-}
-
-.header__burgermenu.active {
-  max-height: 300px; /* Достаточно для содержания всех элементов меню */
-}
-
-.header__burgerlink-item {
-  font-size: 18px;
-  letter-spacing: 2px;
-  font-weight: 700;
-  color: #5a5a5a;
-  transition: all 0.7s ease;
-}
-.header__burgeritems {
-  padding: 55px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.header__burgerlinks {
-  padding: 5px 0;
-}
-.header__burgeronline {
-  margin: 25px 0 0 0;
-  background: linear-gradient(to right, rgb(255, 145, 0), rgb(255, 145, 0));
-  width: 185.05px;
-  font-family: "minecraft", sans-serif;
-  height: 48px;
-  color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  line-height: 1.21;
-  font-weight: 700;
-  font-size: 14px;
-}
-
-@media (hover: hover) {
-  .header__link-item:hover {
-    color: #ffffff;
-    text-decoration: underline;
-  }
-  .footer__text a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-  }
-  .footer__column2-link:hover {
-    color: #ffffff;
-    text-decoration: underline;
-  }
-  .header__burgerlink-item:hover {
-    color: rgba(188, 162, 162, 0.837);
-    text-decoration: underline;
-  }
-  .products__btn:hover {
-    box-shadow: 11px 40px 28px -13px rgba(34, 60, 80, 0.26);
-    transform: translate(0, -7px);
-    color: #ffffff;
-    background: rgb(255, 81, 0);
-  }
-  .card:hover {
-    box-shadow: 11px 40px 28px -13px rgba(161, 134, 36, 0.327);
-    transform: scale(1.05, 1.05);
-    transition: all 0.3s ease;
-  }
-  .item:hover .btn-hover {
-    visibility: visible;
-    position: static;
-  }
-  .item:hover .btn {
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-  }
-}
-@media (hover: none) {
-  .header__link-item:active {
-    color: #ffffff;
-    text-decoration: underline;
-  }
-  .footer__text a:active {
-    color: #ffffff;
-    text-decoration: underline;
-  }
-  .footer__column2-link:active {
-    color: #ffffff;
-    text-decoration: underline;
-  }
-  .header__burgerlink-item:active {
-    color: rgba(188, 162, 162, 0.837);
-    text-decoration: underline;
-  }
-  .item:active .btn-hover {
-    visibility: visible;
-    position: static;
-  }
-  .item:active .btn {
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-  }
-}
-.notification-container {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 99998;
-}
-
-.notification {
-  background: #ff2b1c;
-  color: #fff;
-  font-family: "Unbounded", sans-serif;
-  padding: 15px 20px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  animation: fadeIn 0.3s ease-in-out;
-}
-
-.notification .close-btn {
-  margin-left: 15px;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  background: url("img/someone/customtitle.jpg") center/cover no-repeat;
 }/*# sourceMappingURL=style.css.map */
