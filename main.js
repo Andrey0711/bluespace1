@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function loadPrivileges() {
     try {
-      const response = await fetch("/bluespace1/privileges.json");
+      const response = await fetch("/bluespace1/priveleges.json");
       const privileges = await response.json();
 
       // Отображаем карточки для категории "Привилегии" по умолчанию
