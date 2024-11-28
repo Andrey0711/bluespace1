@@ -130,7 +130,7 @@ button[disabled] {
 .newyear__image {
   z-index: 1;
   height: 100%;
-  background: url("img/bgsite.png");
+  background: url("/img/bgsite.png");
 }
 
 .content {
