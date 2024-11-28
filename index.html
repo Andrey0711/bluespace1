@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма доната</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="/snowFlakes/snow.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--<form id="donationForm">
+      <input type="text" id="nickname" placeholder="Никнейм" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <button type="submit">Отправить</button>
+    </form> -->
+    <div class="newyear">
+      <div class="newyear__image"></div>
+    </div>
+    <div class="wrapper">
+      <div id="paymentform1" class="paymentform modal">
+        <div class="container">
+          <div class="paymentform__box">
+            <button id="closebutton" class="paymentform__closebtn">
+              <img
+                src="/images/icons/closepopup.svg"
+                width="50px"
+                height="50px"
+                alt="close popup"
+              />
+            </button>
+
+            <form id="donationForm" class="paymentform__form">
+              <div class="paymentform__decoration"></div>
+              <div class="paymentform__title">
+                <span id="modalTitle"></span>
+              </div>
+              <div class="paymentform__row row">
+                <div class="paymentform__nickname-img paymentimg"></div>
+                <input
+                  class="paymentform__nickname"
+                  type="text"
+                  id="nickname"
+                  placeholder="Никнейм"
+                  required
+                />
+              </div>
+              <div class="paymentform__row2 row">
+                <div class="paymentform__email-img paymentimg"></div>
+                <input
+                  class="paymentform__email"
+                  type="email"
+                  id="email"
+                  placeholder="Электронная почта"
+                  required
+                />
+              </div>
+              <div class="paymentform__row3 row">
+                <div class="paymentform__promo-img paymentimg"></div>
+                <input
+                  class="paymentform__promo"
+                  type="text"
+                  id="promo"
+                  placeholder="Промокод, если имеется"
+                />
+              </div>
+              <div class="paymentform__radiocontainer">
+                <label class="paymentform__label" for="check-box_privacy">
+                  <input
+                    type="checkbox"
+                    class="form__checkbox-privacy check-box"
+                    id="check-box_privacy"
+                    name="accept"
+                  />
+                  <span class="check-style"></span>
+                  <p>Я принимаю условия</p>
+                  <a
+                    href="https://legal.easyx.ru/general/rules"
+                    target="_blank"
+                    class="form__links"
+                    >пользовательского соглашения</a
+                  >
+                  и
+                  <a
+                    href="https://legal.easyx.ru/easydonate/terms-of-service"
+                    target="_blank"
+                    class="form__links"
+                    >оказания услуг</a
+                  >
+                </label>
+              </div>
+              <div class="paymentform__row4 row row1">
+                <div class="paymentform__totalcost">
+                  Итого: <span id="modalPrice"></span><span>₽</span>
+                </div>
+                <div class="paymentform__submitbtn">
+                  <button
+                    id="submitbutton"
+                    class="paymentform__btn"
+                    name="subscribe"
+                    type="submit"
+                    disabled
+                  >
+                    Купить
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <header class="header">
+          <div class="container">
+            <div class="header__bg">
+              <div class="header__padding">
+                <div class="header__img"></div>
+                <nav class="header__menu">
+                  <ul class="header__items">
+                    <li class="header__links">
+                      <a href="#" class="header__link-item">Группа ВК</a>
+                    </li>
+                    <li class="header__links">
+                      <a href="#" class="header__link-item">Наш телеграм</a>
+                    </li>
+                    <li class="header__links">
+                      <a href="#" class="header__link-item">Правила сервера</a>
+                    </li>
+                    <li class="header__links">
+                      <a href="#" class="header__link-item">Поддержка</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="header__online"><span id="serveronline">Загрузка...</span></div>
+                <div class="header__burgermenubtn">
+                  <img
+                    id="burger-icon"
+                    src="/images/icons/burger-btn.svg"
+                    alt="burger-menu"
+                  />
+                </div>
+                <nav id="burgermenu" class="header__burgermenu">
+                  <ul class="header__burgeritems">
+                    <li class="header__burgerlinks">
+                      <a href="#" class="header__burgerlink-item">Группа ВК</a>
+                    </li>
+                    <li class="header__burgerlinks">
+                      <a href="#" class="header__burgerlink-item">Наш телеграм</a>
+                    </li>
+                    <li class="header__burgerlinks">
+                      <a href="#" class="header__burgerlink-item">Правила сервера</a>
+                    </li>
+                    <li class="header__burgerlinks">
+                      <a href="#" class="header__burgerlink-item">Поддержка</a>
+                    </li>
+                    <div class="header__burgeronline"><span id="serveronline1">Загрузка...</span></div>
+                  </ul>
+                  
+                </nav>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="slider">
+          <div class="container">
+            <div class="slider__image-container">
+              <div class="slider__row">
+                <div class="slider__title">
+                  Качество в каждом блоке. Чистота в каждом шаге создания
+                </div>
+                <div class="slider__image">
+                  <img
+                    width="100%"
+                    height="100%"
+                    src="/images/bluespace.png"
+                    class="slider__img"
+                    alt="логотип"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="categories">
+          <div class="container">
+            <div class="categories__text">Категории</div>
+            <div class="categories__border"></div>
+          </div>
+        </div>
+        <div class="products">
+          <div class="container">
+            <div class="products__bg">
+              <ul class="products__items">
+                <li class="products__elements">
+                  <button
+                    type="button"
+                    data-target="Привилегии"
+                    class="products__btn first-selected-btn active"
+                  >
+                    Привилегии
+                  </button>
+                </li>
+                <li class="products__elements">
+                  <button
+                    type="button"
+                    data-target="Кейсы"
+                    class="products__btn"
+                  >
+                    Кейсы
+                  </button>
+                </li>
+                <li class="products__elements">
+                  <button
+                    type="button"
+                    data-target="Батл Пасс"
+                    class="products__btn"
+                  >
+                    Батл Пасс
+                  </button>
+                </li>
+                <li class="products__elements">
+                  <button
+                    type="button"
+                    data-target="Токены"
+                    class="products__btn"
+                  >
+                    Токены
+                  </button>
+                </li>
+                <li class="products__elements">
+                  <button
+                    type="button"
+                    data-target="Разное"
+                    class="products__btn"
+                  >
+                    Разное
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="cardsContainer" class="cards-container">
+          <div class="container">
+            <div class="cards-container__row">
+              <!-- Карточки будут загружаться сюда -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__bg">
+          <div class="footer__row">
+            <div class="footer__column-1">
+              <img
+                src="/images/BlueSpace-Studio.svg"
+                alt="bluespace"
+                width="100px"
+                height="50px"
+              />
+              <div class="footer__text text">
+                © 2024 BlueSpace.com. Мы не связаны с Mojang, AB. Коммерческая
+                деятельность проекта соответствует политике
+                <a href="#">Mojang, AB</a>.
+              </div>
+            </div>
+            <div class="footer__column-2">
+              <div class="footer__column2-heading">Документы</div>
+              <div class="footer__column2-text">
+                <a href="#" class="footer__column2-link text"
+                  >Политика конфиденциальности</a
+                >
+              </div>
+            </div>
+            <div class="footer__column-3">
+              <div class="footer__column3-heading">Контакты</div>
+              <div class="footer__column3-text text">
+                <p>ИП Романив А. Ю. ИНН 777777777777</p>
+                <p>ИП Погальников С. Г. ИНН 888888888888</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/snowFlakes/Snow.min.js"></script>
+    <script>
+      new Snow({
+        showSnowBalls: false,
+      });
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
