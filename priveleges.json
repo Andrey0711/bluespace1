@@ -3,147 +3,147 @@
     "id": 879907,
     "title": "WINTER",
     "price": 1999,
-    "image": "/images/donate/winter.jpeg",
+    "image": "img/donate/winter.jpeg",
     "category": "Привилегии"
   },
   {
     "id": 879909,
     "title": "DRAGON",
     "price": 789,
-    "image": "/images/donate/dragon.jpg",
+    "image": "img/donate/dragon.jpg",
     "category": "Привилегии"
   },
   {
     "id": 879910,
     "title": "ALLAY",
     "price": 555,
-    "image": "/images/donate/allay.png",
+    "image": "img/donate/allay.png",
     "category": "Привилегии"
   },
   {
     "id": 879911,
     "title": "WITHER",
     "price": 344,
-    "image": "/images/donate/wither.png",
+    "image": "img/donate/wither.png",
     "category": "Привилегии"
   },
   {
     "id": 879912,
     "title": "DEMON",
     "price": 222,
-    "image": "/images/donate/demon.jpg",
+    "image": "img/donate/demon.jpg",
     "category": "Привилегии"
   },
   {
     "id": 879913,
     "title": "BERSERK",
     "price": 99,
-    "image": "/images/donate/berserk.jpg",
+    "image": "img/donate/berserk.jpg",
     "category": "Привилегии"
   },
   {
     "id": 879915,
     "title": "Донат Кейс",
     "price": 109,
-    "image": "/images/cases/doncase.png",
+    "image": "img/cases/doncase.png",
     "category": "Кейсы"
   },
   {
     "id": 879916,
     "title": "Мистический Кейс",
     "price": 249,
-    "image": "/images/cases/mystcase.png",
+    "image": "img/cases/mystcase.png",
     "category": "Кейсы"
   },
   {
     "id": 879917,
     "title": "Кейс с токенами",
     "price": 49,
-    "image": "/images/cases/rubcase.jpg",
+    "image": "img/cases/rubcase.jpg",
     "category": "Кейсы"
   },
   {
     "id": 879918,
     "title": "Кейс с префиксами",
     "price": 39,
-    "image": "/images/cases/titlecase.png",
+    "image": "img/cases/titlecase.png",
     "category": "Кейсы"
   },
   {
     "id": 879919,
     "title": "PREMIUM BATTLEPASS",
     "price": 299,
-    "image": "/images/battlepass/battlepass.png",
+    "image": "img/battlepass/battlepass.png",
     "category": "Батл Пасс"
   },
   {
     "id": 879920,
     "title": "ВСЕ УРОВНИ BATTLEPASS",
     "price": 199,
-    "image": "/images/battlepass/battlelvl.png",
+    "image": "img/battlepass/battlelvl.png",
     "category": "Батл Пасс"
   },
   {
     "id": 879921,
     "title": "500 токенов",
     "price": 99,
-    "image": "/images/tokens/small-tokens.jpg",
+    "image": "img/tokens/small-tokens.jpg",
     "category": "Токены"
   },
   {
     "id": 879922,
     "title": "1000 токенов",
     "price": 199,
-    "image": "/images/tokens/small-tokens.jpg",
+    "image": "img/tokens/small-tokens.jpg",
     "category": "Токены"
   },
   {
     "id": 879923,
     "title": "2500 токенов",
     "price": 439,
-    "image": "/images/tokens/small-tokens.jpg",
+    "image": "img/tokens/small-tokens.jpg",
     "category": "Токены"
   },
   {
     "id": 879924,
     "title": "5000 токенов",
     "price": 849,
-    "image": "/images/tokens/a-lot-tokens.jpg",
+    "image": "img/tokens/a-lot-tokens.jpg",
     "category": "Токены"
   },
   {
     "id": 879925,
     "title": "15000 токенов",
     "price": 1499,
-    "image": "/images/tokens/a-lot-tokens.jpg",
+    "image": "img/tokens/a-lot-tokens.jpg",
     "category": "Токены"
   },
   {
     "id": 879926,
     "title": "Разбан Аккаунта",
     "price": 199,
-    "image": "/images/someone/unban.jpg",
+    "image": "img/someone/unban.jpg",
     "category": "Разное"
   },
   {
     "id": 879927,
     "title": "Размут Аккаунта",
     "price": 199,
-    "image": "/images/someone/unmute.jpg",
+    "image": "img/someone/unmute.jpg",
     "category": "Разное"
   },
   {
     "id": 879928,
     "title": "Перенос Доната",
     "price": 79,
-    "image": "/images/someone/changedonate.png",
+    "image": "img/someone/changedonate.png",
     "category": "Разное"
   },
   {
     "id": 879929,
     "title": "Кастом Префикс",
     "price": 99,
-    "image": "/images/someone/customtitle.jpg",
+    "image": "img/someone/customtitle.jpg",
     "category": "Разное"
   }
 ]
